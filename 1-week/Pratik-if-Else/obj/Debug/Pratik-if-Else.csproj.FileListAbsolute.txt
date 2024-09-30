@@ -1,0 +1,7 @@
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else\bin\Debug\Pratik-if-Else.exe.config
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else\bin\Debug\Pratik-if-Else.exe
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else\bin\Debug\Pratik-if-Else.pdb
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else\obj\Debug\Pratik-if-Else.csproj.AssemblyReference.cache
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else\obj\Debug\Pratik-if-Else.csproj.CoreCompileInputs.cache
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else\obj\Debug\Pratik-if-Else.exe
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else\obj\Debug\Pratik-if-Else.pdb

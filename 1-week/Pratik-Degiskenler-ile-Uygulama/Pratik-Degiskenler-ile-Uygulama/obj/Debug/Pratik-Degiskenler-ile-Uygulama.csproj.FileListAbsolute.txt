@@ -1,0 +1,7 @@
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Degiskenler-ile-Uygulama\Pratik-Degiskenler-ile-Uygulama\bin\Debug\Pratik-Degiskenler-ile-Uygulama.exe.config
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Degiskenler-ile-Uygulama\Pratik-Degiskenler-ile-Uygulama\bin\Debug\Pratik-Degiskenler-ile-Uygulama.exe
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Degiskenler-ile-Uygulama\Pratik-Degiskenler-ile-Uygulama\bin\Debug\Pratik-Degiskenler-ile-Uygulama.pdb
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Degiskenler-ile-Uygulama\Pratik-Degiskenler-ile-Uygulama\obj\Debug\Pratik-Degiskenler-ile-Uygulama.csproj.AssemblyReference.cache
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Degiskenler-ile-Uygulama\Pratik-Degiskenler-ile-Uygulama\obj\Debug\Pratik-Degiskenler-ile-Uygulama.csproj.CoreCompileInputs.cache
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Degiskenler-ile-Uygulama\Pratik-Degiskenler-ile-Uygulama\obj\Debug\Pratik-Degiskenler-ile-Uygulama.exe
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Degiskenler-ile-Uygulama\Pratik-Degiskenler-ile-Uygulama\obj\Debug\Pratik-Degiskenler-ile-Uygulama.pdb

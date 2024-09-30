@@ -1,0 +1,7 @@
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-ilk-Uygulamam\Pratik-ilk-Uygulamam\bin\Debug\Pratik-ilk-Uygulamam.exe.config
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-ilk-Uygulamam\Pratik-ilk-Uygulamam\bin\Debug\Pratik-ilk-Uygulamam.exe
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-ilk-Uygulamam\Pratik-ilk-Uygulamam\bin\Debug\Pratik-ilk-Uygulamam.pdb
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-ilk-Uygulamam\Pratik-ilk-Uygulamam\obj\Debug\Pratik-ilk-Uygulamam.csproj.AssemblyReference.cache
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-ilk-Uygulamam\Pratik-ilk-Uygulamam\obj\Debug\Pratik-ilk-Uygulamam.csproj.CoreCompileInputs.cache
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-ilk-Uygulamam\Pratik-ilk-Uygulamam\obj\Debug\Pratik-ilk-Uygulamam.exe
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-ilk-Uygulamam\Pratik-ilk-Uygulamam\obj\Debug\Pratik-ilk-Uygulamam.pdb

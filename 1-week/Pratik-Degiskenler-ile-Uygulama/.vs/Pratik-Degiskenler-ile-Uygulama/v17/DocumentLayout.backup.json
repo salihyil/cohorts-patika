@@ -14,8 +14,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,9 +28,9 @@
               "RelativeDocumentMoniker": "Pratik-Degiskenler-ile-Uygulama\\Program.cs",
               "ToolTip": "D:\\codes\\c#-ornekler\\cohorts-patika\\1-week\\Pratik-Degiskenler-ile-Uygulama\\Pratik-Degiskenler-ile-Uygulama\\Program.cs",
               "RelativeToolTip": "Pratik-Degiskenler-ile-Uygulama\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwCcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T10:53:11.404Z",
+              "WhenOpened": "2024-09-30T14:34:35.24Z",
               "EditorCaption": ""
             }
           ]

@@ -35,7 +35,7 @@ namespace Pratik_Degiskenler_ile_Uygulama
             string lastName = Console.ReadLine();
             Console.Write("Telefon Numarasi: ");
             string phoneNumber = Console.ReadLine(); // Telefon numarası için string kullanıldı, çünkü telefon numaraları sayısal işlemler gerektirmediği için metin olarak saklanmalıdır.
-            
+
             Console.Write("Yas: ");
             int age = int.Parse(Console.ReadLine());
             Console.Write("İlk aldigi urunun fiyati: ");
@@ -45,7 +45,7 @@ namespace Pratik_Degiskenler_ile_Uygulama
 
             int discountPercentage = 10;
             decimal totalPrice = firstProductPrice + secondProductPrice;
-            decimal patikaPoint = (firstProductPrice + secondProductPrice) * 10 / 100;
+            decimal patikaPoint = (firstProductPrice + secondProductPrice) * discountPercentage / 100;
 
             Console.WriteLine("--------------------");
             Console.WriteLine($"{idNumber} Tc numarali {name} {lastName} isimli kisi icin kayit olusturulmustur.");

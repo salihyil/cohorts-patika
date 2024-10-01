@@ -1,0 +1,7 @@
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Kim-Milyoner-Olmak-İster\bin\Debug\Pratik-Kim-Milyoner-Olmak-İster.exe.config
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Kim-Milyoner-Olmak-İster\bin\Debug\Pratik-Kim-Milyoner-Olmak-İster.exe
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Kim-Milyoner-Olmak-İster\bin\Debug\Pratik-Kim-Milyoner-Olmak-İster.pdb
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Kim-Milyoner-Olmak-İster\obj\Debug\Pratik-Kim-Milyoner-Olmak-İster.csproj.AssemblyReference.cache
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Kim-Milyoner-Olmak-İster\obj\Debug\Pratik-Kim-Milyoner-Olmak-İster.csproj.CoreCompileInputs.cache
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Kim-Milyoner-Olmak-İster\obj\Debug\Pratik-Kim-Milyoner-Olmak-İster.exe
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-Kim-Milyoner-Olmak-İster\obj\Debug\Pratik-Kim-Milyoner-Olmak-İster.pdb

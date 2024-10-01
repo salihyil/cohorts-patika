@@ -41,7 +41,7 @@ namespace Pratik_Kim_Milyoner_Olmak_İster
             }
             Console.WriteLine();
 
-            // Question 3 (asked if first answer is correct)
+            // Eğer doğru cevap sayısı 1 ise, üçüncü soruyu sor
             if (correctAnswers == 1)
             {
                 Console.WriteLine("3 -> 5 * 2 + 8 / 2 - 2 işleminin sonucu kaçtır ?");

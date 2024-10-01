@@ -1,0 +1,7 @@
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else-ve-Switch-Case\bin\Debug\Pratik-if-Else-ve-Switch-Case.exe.config
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else-ve-Switch-Case\bin\Debug\Pratik-if-Else-ve-Switch-Case.exe
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else-ve-Switch-Case\bin\Debug\Pratik-if-Else-ve-Switch-Case.pdb
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else-ve-Switch-Case\obj\Debug\Pratik-if-Else-ve-Switch-Case.csproj.AssemblyReference.cache
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else-ve-Switch-Case\obj\Debug\Pratik-if-Else-ve-Switch-Case.csproj.CoreCompileInputs.cache
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else-ve-Switch-Case\obj\Debug\Pratik-if-Else-ve-Switch-Case.exe
+D:\codes\c#-ornekler\cohorts-patika\1-week\Pratik-if-Else-ve-Switch-Case\obj\Debug\Pratik-if-Else-ve-Switch-Case.pdb

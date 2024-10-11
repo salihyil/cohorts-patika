@@ -39,7 +39,16 @@ namespace Hafta_2_Kapanis
             Console.WriteLine("Nasılsın ?");
             Console.WriteLine("İyiyim");
             Console.WriteLine("Sen nasılsın ?");
+
+            //2.yol 
+            //Console.WriteLine(@"
+            //    Merhaba
+            //    Nasılsın ? 
+            //    İyiyim
+            //    Sen nasılsın? ");
+
             #endregion */
+
 
             /* #region 2 - Bir adet metinsel , bir adet tam sayı verisi tutmak için 2 adet değişken tanımlayınız. Bunların değerlerini atayıp , ekrana yazdırınız.
             string name = "Salih";
@@ -85,6 +94,9 @@ namespace Hafta_2_Kapanis
             string text1 = Console.ReadLine();
             Console.Write("Metinsel ikinci değeri gir: ");
             string text2 = Console.ReadLine();
+            string temp = text1;
+            text1 = text2;
+            text2 = temp;
             ChangeTextPosition(text1, text2);
             #endregion */
 
@@ -118,10 +130,18 @@ namespace Hafta_2_Kapanis
 
             int oldest = GetOldestAge(age1, age2, age3);
             Console.WriteLine($"{age1}-{age2}-{age3} bu yaşlar arasından en yaşlısı: {oldest}");
+
+            // 2.yol
+            int oldest = FindOldestAge(age1, age2, age3);
+            Console.WriteLine($"{age1}-{age2}-{age3} bu yaşlar arasından en yaşlısı: {oldest}");
             #endregion */
 
             /* #region 12 - Kullanıcıdan sınırsız sayıda sayı alıp , bunlardan en büyüğünü ekrana yazdıran ve aynı zamanda geriye dönen bir metot yazınız.
             int maxNumber = GetMaxNumber();
+            Console.WriteLine($"En büyük sayı: {maxNumber}");
+
+            // 2.yol
+            int maxNumber = EnBuyugu();
             Console.WriteLine($"En büyük sayı: {maxNumber}");
             #endregion */
 
@@ -175,11 +195,12 @@ namespace Hafta_2_Kapanis
             Console.WriteLine(text.ToLower());
             #endregion */
 
-            #region 18 - "    Selamlar   " metnini bir değişkene atayıp , başındaki ve sonundaki boşlukları siliniz. Kalıcı olarak.
-            string text = "    Selamlar   ";
-            Trim(ref text);
-            Console.WriteLine(text);
-            #endregion
+            //#region 18 - "    Selamlar   " metnini bir değişkene atayıp , başındaki ve sonundaki boşlukları siliniz. Kalıcı olarak.
+            //string text = "    Selamlar   ";
+            //Trim(ref text);
+            //Console.WriteLine(text);
+            //#endregion
+            Console.WriteLine("En büyük sayı: " + EnBuyugu());
 
             Console.ReadKey();
         }
@@ -216,6 +237,17 @@ namespace Hafta_2_Kapanis
             else
                 return age3;
         }
+        static int EnYasliyiBul(int age1, int age2, int age3)
+        {
+            return Math.Max(age1, Math.Max(age2, age3));
+        }
+        static int FindOldestAge(int age1, int age2, int age3)
+        {
+            int oldest = age1;
+            if (age2 > oldest) oldest = age2;
+            if (age3 > oldest) oldest = age3;
+            return oldest;
+        }
         static int GetMaxNumber()
         {
             List<int> numbers = new List<int>();
@@ -227,26 +259,57 @@ namespace Hafta_2_Kapanis
 
                 if (input.ToLower() == "q")
                     break;
+                else
+                {
+                    Console.WriteLine("Geçersiz giriş. Lütfen bir sayı girin veya çıkmak için 'q' yazın.");
+                }
+
 
                 if (isNumber)
                 {
                     numbers.Add(number);
                 }
-                else
+
+
+                if (numbers.Count == 0)
                 {
-                    Console.WriteLine("Geçersiz giriş. Lütfen bir sayı girin veya çıkmak için 'q' yazın.");
+                    Console.WriteLine("Hiç sayı girilmedi.");
+                    return 0;
                 }
             }
-
-            if (numbers.Count == 0)
-            {
-                Console.WriteLine("Hiç sayı girilmedi.");
-                return 0;
-            }
-
             int max = numbers.Max();
             return max;
         }
+
+        static int EnBuyugu()
+        {
+            int enBuyuk = int.MinValue;
+            int sayac = 1;
+            bool sonuc;
+
+            while (true)
+            {
+                Console.Write($"{sayac++}. sayı girin (Çıkmak için 'q' yazın): ");
+                string cevap = Console.ReadLine();
+                sonuc = int.TryParse(cevap, out int sayi);
+
+                if (cevap.ToLower() == "q")
+                    break;
+
+                if (sonuc)
+                {
+                    enBuyuk = Math.Max(enBuyuk, sayi);
+                }
+                else
+                {
+                    Console.WriteLine("Geçersiz giriş. Lütfen bir sayı girin veya çıkmak için 'q' yazın.");
+                    sayac = 1;
+                }
+            }
+            return enBuyuk;
+
+        }
+
         static void SwapNames(ref string name1, ref string name2)
         {
             string temp = name1;

@@ -31,6 +31,7 @@
 
             foreach (var item in result)
             {
+                item.
                 Console.WriteLine($"Kitap başlığı: {item.BookTitle} - Yazarın adı: {item.AuthorName}");
             }
 

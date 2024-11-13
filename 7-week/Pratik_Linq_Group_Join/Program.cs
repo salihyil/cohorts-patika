@@ -23,19 +23,19 @@
                 students,
                 @class => @class.ClassId,
                 student => student.ClassId,
-                (@class, student) => new
+                (@class, studentsGroup) => new
                 {
-                    Class = @class,
-                    Students = student
+                    className = @class.ClassName,
+                    studentNames = studentsGroup.Select(student => student.StudentName)
 
                 });
 
             foreach (var item in grouped)
             {
-                Console.WriteLine($"Ders: {item.Class.ClassName}");
-                foreach (var student in item.Students)
+                Console.WriteLine($"Ders: {item.className}");
+                foreach (var name in item.studentNames)
                 {
-                    Console.WriteLine($"  - Ogrenci: {student.StudentName}");
+                    Console.WriteLine($"  - Ogrenci: {name}");
                 }
 
             }

@@ -2,6 +2,10 @@
 
 Bu proje, ASP.NET Core MVC kullanılarak geliştirilmiş temel bir web uygulamasıdır.
 
+## 📸 Ekran Görüntüleri
+
+![Ekran](./ekran.png)
+
 ## 🚀 Özellikler
 
 - ASP.NET Core 8.0 altyapısı
@@ -23,7 +27,7 @@ Bu proje, ASP.NET Core MVC kullanılarak geliştirilmiş temel bir web uygulamas
 
 1. Projeyi klonlayın:
 
-```bash	
+```bash
 git clone https://github.com/salihyil/cohorts-patika.git
 ```
 

@@ -1,0 +1,124 @@
+﻿@model CustomerOrderViewModel
+
+@{
+    ViewData["Title"] = "Customer Orders";
+}
+
+<div class="container-fluid mt-4 fade-in">
+    <div class="row">
+        <!-- Customer Information Section -->
+        <div class="col-12 mb-4">
+            <div class="customer-info-section">
+                <h2 class="section-title h4">Customer Information</h2>
+                <div class="card custom-card hover-effect">
+                    <div class="card-body">
+                        <div class="info-item mb-3">
+                            <i class="fas fa-id-card info-icon"></i>
+                            <p class="mb-0"><strong>Customer ID:</strong> @Model.Customer.Id</p>
+                        </div>
+                        <div class="info-item mb-3">
+                            <i class="fas fa-user info-icon"></i>
+                            <p class="mb-0"><strong>Name:</strong> @Model.Customer.FirstName @Model.Customer.Lastname</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope info-icon"></i>
+                            <p class="mb-0"><strong>Email:</strong> @Model.Customer.Email</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Orders Section -->
+        <div class="col-12">
+            <div class="orders-section">
+                <h2 class="section-title h4">Orders</h2>
+                <div class="custom-table-container">
+                    <table class="table table-hover animate-table custom-table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Order ID</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var order in Model.Orders)
+                            {
+                                <tr class="table-row-hover">
+                                    <td data-label="Order ID">@order.Id</td>
+                                    <td data-label="Product">@order.ProductName</td>
+                                    <td data-label="Price">@order.Price.ToString("C")</td>
+                                    <td data-label="Quantity">@order.Quantity</td>
+                                    <td data-label="Total">@((order.Price * order.Quantity).ToString("C"))</td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot class="table-dark">
+                            <tr>
+                                <td colspan="4" class="text-end"><strong>Total Amount:</strong></td>
+                                <td><strong>@Model.Orders.Sum(o => o.Price * o.Quantity).ToString("C")</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Order Details Modal -->
+<div class="modal fade" id="orderDetailsModal" tabindex="-1" aria-labelledby="orderDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderDetailsModalLabel">Order Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="order-details">
+                    <p><strong>Order ID:</strong> <span id="modalOrderId"></span></p>
+                    <p><strong>Product Name:</strong> <span id="modalProductName"></span></p>
+                    <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+                    <p><strong>Quantity:</strong> <span id="modalQuantity"></span></p>
+                    <p><strong>Total:</strong> <span id="modalTotal"></span></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/06c11baa81.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tableRows = document.querySelectorAll('.table-row-hover');
+            const orderModal = new bootstrap.Modal(document.getElementById('orderDetailsModal'));
+
+            tableRows.forEach(row => {
+                row.addEventListener('click', function() {
+                    const orderId = this.querySelector('[data-label="Order ID"]').textContent;
+                    const productName = this.querySelector('[data-label="Product"]').textContent;
+                    const price = this.querySelector('[data-label="Price"]').textContent;
+                    const quantity = this.querySelector('[data-label="Quantity"]').textContent;
+                    const total = this.querySelector('[data-label="Total"]').textContent;
+
+                    // Populate modal with order details
+                    document.getElementById('modalOrderId').textContent = orderId;
+                    document.getElementById('modalProductName').textContent = productName;
+                    document.getElementById('modalPrice').textContent = price;
+                    document.getElementById('modalQuantity').textContent = quantity;
+                    document.getElementById('modalTotal').textContent = total;
+
+                    // Show the modal
+                    orderModal.show();
+                });
+            });
+        });
+    </script>
+}

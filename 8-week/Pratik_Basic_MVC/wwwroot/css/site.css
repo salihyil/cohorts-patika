@@ -1,0 +1,244 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Genel Stiller */
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.section-title {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #3498db;
+  transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+  width: 100px;
+}
+
+/* Müşteri Bilgi Kartı */
+.custom-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  animation: slideIn 0.5s ease-out;
+}
+
+.info-icon {
+  font-size: 1.2rem;
+  color: #3498db;
+  margin-right: 1rem;
+  width: 25px;
+}
+
+/* Tablo Stilleri */
+.custom-table-container {
+  border-radius: 15px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+}
+
+.table {
+  min-width: 800px;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.animate-table {
+  animation: fadeIn 1s ease-out;
+}
+
+.table-row-hover {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.table-row-hover:hover {
+  transform: scale(1.01);
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.table thead th {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  white-space: nowrap;
+  padding: 1rem;
+}
+
+.table tbody td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.table tfoot {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.table tfoot td {
+  padding: 1rem;
+}
+
+/* Responsive Table Container */
+@media screen and (max-width: 991px) {
+  .custom-table-container {
+    margin: 0 -1rem;
+    border-radius: 0;
+  }
+
+  .orders-section {
+    padding: 0;
+  }
+}
+
+/* Additional container adjustments */
+@media screen and (max-width: 991px) {
+  .orders-section {
+    padding: 0;
+  }
+
+  .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Adjust card margins for mobile */
+@media screen and (max-width: 767px) {
+  .customer-info-section {
+    margin-bottom: 2rem;
+  }
+
+  .orders-section {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-table-container {
+    margin: 0 -1rem;
+    padding: 0 0.5rem;
+  }
+}
+
+/* Modal Styles */
+.modal-content {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  background-color: #2c3e50;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 1rem 1.5rem;
+}
+
+.modal-header .btn-close {
+  color: white;
+  filter: brightness(0) invert(1);
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.order-details p {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.order-details p:last-child {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: 1px solid #eee;
+  padding: 1rem 1.5rem;
+}
+
+.modal.fade .modal-dialog {
+  transform: scale(0.95);
+  transition: transform 0.2s ease-out;
+}
+
+.modal.show .modal-dialog {
+  transform: scale(1);
+}

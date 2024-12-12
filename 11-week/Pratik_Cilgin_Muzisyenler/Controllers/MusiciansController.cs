@@ -89,7 +89,7 @@ namespace Pratik_Cilgin_Muzisyenler.Controllers
             if (_musicians.Any(m => m.Id == musician.Id))
                 return Conflict("A musician with this ID already exists");
 
-            var newId = _musicians.Max(x => x.Id) + 1;
+            var newId = _musicians.Count + 1;
             musician.Id = newId;
 
             _musicians.Add(musician);

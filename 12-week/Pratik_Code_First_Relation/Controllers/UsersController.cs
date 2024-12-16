@@ -10,9 +10,9 @@ namespace Pratik_Code_First_Relation.Controllers
     [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
-        private readonly PratikDbContext _context;
+        private readonly PatikaSecondDbContext _context;
 
-        public UsersController(PratikDbContext context)
+        public UsersController(PatikaSecondDbContext context)
         {
             _context = context;
         }

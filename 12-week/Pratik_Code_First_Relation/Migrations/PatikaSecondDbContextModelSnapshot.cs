@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Pratik_Code_First_Relation.Contexts;
 
@@ -10,12 +9,10 @@ using Pratik_Code_First_Relation.Contexts;
 
 namespace Pratik_Code_First_Relation.Migrations
 {
-    [DbContext(typeof(PratikDbContext))]
-    [Migration("20241216121146_mig_2")]
-    partial class mig_2
+    [DbContext(typeof(PatikaSecondDbContext))]
+    partial class PatikaSecondDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
